@@ -18,22 +18,345 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nik.css">
   </head>
+  <script type="text/javascript">
+     function myFunction(){
+       sum=0;
+       grade=0;
+        var GT = document.getElementById("name1").value;
+        var TOS = document.getElementById("name2").value;
+        var HHM = document.getElementById("name3").value;
+        var SWHM= document.getElementById("name4").value;
+        var PP = document.getElementById("name5").value;
+        var RCS = document.getElementById("name6").value;
+        var GTLAB = document.getElementById("name7").value;
+        var HHMLAB = document.getElementById("name8").value;
+        var SS = document.getElementById("name9").value;
 
+        switch (GT) {
+         case 'X':
+         case 'x':
+           grade = 10;
+           break;
+         case 'A':
+         case 'a':
+           grade = 9;
+           break;
+         case 'B':
+         case 'b':
+           grade = 8;
+           break;
+         case 'C':
+         case 'c':
+           grade = 7;
+           break;
+         case 'D':
+         case 'd':
+           grade = 6;
+           break;
+         case 'E':
+         case 'e':
+           grade = 5;
+           break;
+       }
+       sum+=grade*4;
+       grade=0;
+       switch (TOS) {
+        case 'X':
+        case 'x':
+          grade = 10;
+          break;
+        case 'A':
+        case 'a':
+          grade = 9;
+          break;
+        case 'B':
+        case 'b':
+          grade = 8;
+          break;
+        case 'C':
+        case 'c':
+          grade = 7;
+          break;
+        case 'D':
+        case 'd':
+          grade = 6;
+          break;
+        case 'E':
+        case 'e':
+          grade = 5;
+          break;
+      }
+      sum+=grade*4;
+
+      grade=0;
+        switch (HHM) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*4;
+
+        grade=0;
+        switch (SWHM) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*3;
+
+        grade=0;
+        switch (PP) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*4;
+
+        grade=0;
+        switch (RCS) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*4;
+
+        grade=0;
+        switch (GTLAB) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*1.5;
+
+        grade=0;
+        switch (HHMLAB) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*1.5;
+
+
+        grade=0;
+        switch (SS) {
+          case 'X':
+          case 'x':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+        }
+        sum+=grade*1.5;
+        sum/=27.5;
+
+
+        const a = sum.toFixed(4);
+
+        alert('Your SGPA is: '+ a);
+     }
+  </script>
   <body>
     <h1>Nikhil Koushik</h1>
   </body>
-  <h2>SITE 18M III-B.tech V Sem (CSE) SGPA Calculator</h2>
-  <div class="" style="height:1100.390px;">
-    <a href="cse1.html"><button type="button" class="btnsma btn-primary btn-outline-dark bet" style="margin:15% 35% 5% 35%;width:30%;height:15%;font-size:3rem;font-weight:bolder;">CSE-A</button></a>
-    <a href="cse2.html"><button type="button" class="btnsma btn-primary btn-outline-dark bet" style="margin:5% 35%;width:30%;height:15%;font-size:3rem;font-weight:bolder;">CSE-B</button></a><br>
-    <a href="cse3.html"><button type="button" class="btnsma btn-primary btn-outline-dark bet" style="margin:5% 35%;width:30%;height:15%;font-size:3rem;font-weight:bolder;">CSE-C</button></a><br>
-    <a href="index.html"><button class="btn btn-primary btn-outline-dark ew" style="margin-left:40%;width:20%;height:6%;font-size:2.2rem;" type="button">Home</button></a>
+  <h2>SITE 18M III-B.tech V Sem (ECE) SGPA Calculator</h2>
+  <form action="" method="">
+      </div>
+    <table class="table  table-hover table-striped  table-light" style="margin-top: 22px; border-bottom: 0px;">
+      <thead class="table-primary">
+        <tr>
+          <th style="padding-left:40px;border-radius: 28px;">Subject</th>
+          <th style="padding-left:40px; border-radius: 28px;">Grade</th>
+        </tr>
+      </thead>
+      <tbody  style="">
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">GT</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name1"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">TOS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name2"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">H&HM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name3"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SW&HM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name4"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PP</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">RCS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">GT LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">H&HM LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name9"></td>
+        </tr>
+      </tbody>
 
-  </div>
-
-
-  <pre><p style="font-size: 2rem;">  <b class="ad">Note:</b> Please select your Dept.
-        </p></pre>
+    </table>
+      <a href="index.html"><button class="btn btn-primary btn-lg btn-outline-dark ew" style="margin-left:2%;width:10%;" type="button">Home</button></a>
+      <button class="btnsm" style="margin-left:28%;width:20%;border: 0px;" type="submit" onclick="myFunction();">Submit</button>
+  </form>
+  <pre><p style="font-size: 2rem;">  <b class="ad">Note:</b> You can enter Caps or Smalls.
+        For A+, Enter X or x.</p></pre>
 <marquee behavior="scroll;" direction="left;" scrolldelay="1ms;" scrollamount="25;">Hello, This is the beta version of SGPA Calculator... CGPA Calculator is coming soon...</marquee>
 <div class="elle">
   <a href="https://instagram.com/_nikhil.koushik_?igshid=YmMyMTA2M2Y="><img src="instagram.png" alt="" class="images"></a>
