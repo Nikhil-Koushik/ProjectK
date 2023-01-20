@@ -22,6 +22,7 @@
      function myFunction(){
        sum=0;
        grade=0;
+       count=0;
         var MS = document.getElementById("name1").value;
         var CS = document.getElementById("name2").value;
         var TCSN = document.getElementById("name3").value;
@@ -57,6 +58,13 @@
          case 'e':
            grade = 5;
            break;
+         case 'F':
+         case 'f':
+           grade = 0;
+           break;
+         default:
+            count++;
+            break;
        }
        sum+=grade*3;
        grade=0;
@@ -85,6 +93,13 @@
         case 'e':
           grade = 5;
           break;
+        case 'F':
+        case 'f':
+          grade = 0;
+          break;
+        default:
+           count++;
+           break;
       }
       sum+=grade*3;
 
@@ -114,6 +129,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -143,6 +165,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -172,6 +201,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -201,6 +237,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -230,6 +273,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*1.5;
 
@@ -259,6 +309,13 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*1.5;
 
@@ -289,14 +346,22 @@
           case 'e':
             grade = 5;
             break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*2;
         sum/=23;
 
 
         const a = sum.toFixed(4);
-
-        alert('Your SGPA is: '+ a);
+        if(count==0){
+        alert('Your SGPA is: '+ a);}
+        else{alert('Please Enter valid grades.')}
      }
   </script>
   <body>

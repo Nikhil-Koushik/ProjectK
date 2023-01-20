@@ -58,9 +58,13 @@
          case 'e':
            grade = 5;
            break;
-         default: 
-           count++;
+         case 'F':
+         case 'f':
+           grade = 0;
            break;
+         default:
+            count++;
+            break;
        }
        sum+=grade*3;
        grade=0;
@@ -89,7 +93,11 @@
         case 'e':
           grade = 5;
           break;
-        default: 
+        case 'F':
+        case 'f':
+          grade = 0;
+          break;
+        default:
            count++;
            break;
       }
@@ -121,9 +129,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -153,9 +165,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -185,9 +201,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -217,9 +237,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*3;
 
@@ -249,9 +273,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*1.5;
 
@@ -281,9 +309,13 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
         sum+=grade*1.5;
 
@@ -314,24 +346,22 @@
           case 'e':
             grade = 5;
             break;
-          default: 
-           count++;
-           break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
         }
-         
         sum+=grade*2;
         sum/=24;
 
 
         const a = sum.toFixed(4);
-        if(count==0)
-        {
-            alert('Your SGPA is: '+ a);
-        }
-        else
-        {
-            alert('Enter Valid Grades');
-        }
+        if(count==0){
+        alert('Your SGPA is: '+ a);}
+        else{alert('Please Enter valid grades.')}
      }
   </script>
   <body>
