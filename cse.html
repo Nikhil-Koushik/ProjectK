@@ -22,17 +22,16 @@
      function myFunction(){
        sum=0;
        grade=0;
-        var GT = document.getElementById("name1").value;
-        var TOS = document.getElementById("name2").value;
-        var HHM = document.getElementById("name3").value;
-        var SWHM= document.getElementById("name4").value;
-        var PP = document.getElementById("name5").value;
-        var RCS = document.getElementById("name6").value;
-        var GTLAB = document.getElementById("name7").value;
-        var HHMLAB = document.getElementById("name8").value;
-        var SS = document.getElementById("name9").value;
+        var MS = document.getElementById("name1").value;
+        var DBMS = document.getElementById("name2").value;
+        var OS = document.getElementById("name3").value;
+        var OOAD = document.getElementById("name4").value;
+        var AT = document.getElementById("name5").value;
+        var DBMSLAB = document.getElementById("name6").value;
+        var OSLAB = document.getElementById("name7").value;
+        var SS = document.getElementById("name8").value;
 
-        switch (GT) {
+        switch (MS) {
          case 'X':
          case 'x':
            grade = 10;
@@ -58,9 +57,9 @@
            grade = 5;
            break;
        }
-       sum+=grade*4;
+       sum+=grade*3;
        grade=0;
-       switch (TOS) {
+       switch (DBMS) {
         case 'X':
         case 'x':
           grade = 10;
@@ -86,39 +85,10 @@
           grade = 5;
           break;
       }
-      sum+=grade*4;
+      sum+=grade*3;
 
       grade=0;
-        switch (HHM) {
-          case 'X':
-          case 'x':
-            grade = 10;
-            break;
-          case 'A':
-          case 'a':
-            grade = 9;
-            break;
-          case 'B':
-          case 'b':
-            grade = 8;
-            break;
-          case 'C':
-          case 'c':
-            grade = 7;
-            break;
-          case 'D':
-          case 'd':
-            grade = 6;
-            break;
-          case 'E':
-          case 'e':
-            grade = 5;
-            break;
-        }
-        sum+=grade*4;
-
-        grade=0;
-        switch (SWHM) {
+        switch (OS) {
           case 'X':
           case 'x':
             grade = 10;
@@ -147,7 +117,7 @@
         sum+=grade*3;
 
         grade=0;
-        switch (PP) {
+        switch (OOAD) {
           case 'X':
           case 'x':
             grade = 10;
@@ -173,10 +143,10 @@
             grade = 5;
             break;
         }
-        sum+=grade*4;
+        sum+=grade*3;
 
         grade=0;
-        switch (RCS) {
+        switch (AT) {
           case 'X':
           case 'x':
             grade = 10;
@@ -202,10 +172,10 @@
             grade = 5;
             break;
         }
-        sum+=grade*4;
+        sum+=grade*3;
 
         grade=0;
-        switch (GTLAB) {
+        switch (DBMSLAB) {
           case 'X':
           case 'x':
             grade = 10;
@@ -234,7 +204,7 @@
         sum+=grade*1.5;
 
         grade=0;
-        switch (HHMLAB) {
+        switch (OSLAB) {
           case 'X':
           case 'x':
             grade = 10;
@@ -261,7 +231,6 @@
             break;
         }
         sum+=grade*1.5;
-
 
         grade=0;
         switch (SS) {
@@ -290,8 +259,8 @@
             grade = 5;
             break;
         }
-        sum+=grade*1.5;
-        sum/=27.5;
+        sum+=grade*2;
+        sum/=20;
 
 
         const a = sum.toFixed(4);
@@ -302,7 +271,7 @@
   <body>
     <h1>Nikhil Koushik</h1>
   </body>
-  <h2>SITE 18M III-B.tech V Sem (ECE) SGPA Calculator</h2>
+  <h2>SITE 18M III-B.tech V Sem (CSE-A) SGPA Calculator</h2>
   <form action="" method="">
       </div>
     <table class="table  table-hover table-striped  table-light" style="margin-top: 22px; border-bottom: 0px;">
@@ -314,40 +283,36 @@
       </thead>
       <tbody  style="">
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">GT</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">MS</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name1"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">TOS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DBMS</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name2"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">H&HM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">OS</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name3"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SW&HM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">AI/MAD/UML</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name4"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PP</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">CG</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">RCS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DBMS LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">GT LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">OS LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">H&HM LAB</label></td>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
-        </tr>
-        <tr>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS</label></td>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name9"></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
         </tr>
       </tbody>
 
