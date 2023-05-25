@@ -23,18 +23,18 @@
        sum=0;
        grade=0;
        count=0;
-        var TOS-2 = document.getElementById("name1").value;
+        var TOS = document.getElementById("name1").value;
         var DSS = document.getElementById("name2").value;
         var PPC = document.getElementById("name3").value;
-        var RSGA= document.getElementById("name4").value;
+        var RSGA = document.getElementById("name4").value;
         var GIT = document.getElementById("name5").value;
-        var GTLAB = document.getElementById("name6").value;
-        var HHMLAB = document.getElementById("name7").value;
+        var XLAB = document.getElementById("name6").value;
+        var HTLAB = document.getElementById("name7").value;
         var SS = document.getElementById("name8").value;
 
-        switch (TOS2) {
-         case 'A+':
-         case 'a+':
+        switch (TOS) {
+          case 'A+':
+          case 'a+':
            grade = 10;
            break;
          case 'A':
@@ -64,13 +64,12 @@
          default:
             count++;
             break;
-         }
-        sum+=grade*4;
-        grade=0;
-
-        switch (DSS) {
-        case 'A+':
-        case 'a+':
+          }
+       sum+=grade*3;
+       grade=0;
+       switch (DSS) {
+         case 'A+':
+         case 'a+':
           grade = 10;
           break;
         case 'A':
@@ -100,10 +99,10 @@
         default:
            count++;
            break;
-        }
-        sum+=grade*4;
-        grade=0;
+       }
+      sum+=grade*3;
 
+      grade=0;
         switch (PPC) {
           case 'A+':
           case 'a+':
@@ -137,7 +136,7 @@
              count++;
              break;
         }
-        sum+=grade*4;
+        sum+=grade*3;
 
         grade=0;
         switch (RSGA) {
@@ -209,10 +208,11 @@
              count++;
              break;
         }
-        sum+=grade*4;
+        sum+=grade*3;
 
         grade=0;
-        switch (GTLAB) {
+
+        switch (XLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -248,7 +248,7 @@
         sum+=grade*1.5;
 
         grade=0;
-        switch (HHMLAB) {
+        switch (HTLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -319,7 +319,7 @@
              break;
         }
         sum+=grade*2;
-        sum/=27.5;
+        sum/=23;
 
 
         const a = sum.toFixed(4);
@@ -347,15 +347,15 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name1"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DSS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DOS</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name2"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PP&C</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PP & A</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name3"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">RS&GA</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">RS & GISA</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name4"></td>
         </tr>
         <tr>
@@ -363,17 +363,18 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">GT LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">XLAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">H&HM LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">HT LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS & AB-2</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
         </tr>
+
       </tbody>
 
     </table>
