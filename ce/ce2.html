@@ -28,9 +28,10 @@
         var PPC = document.getElementById("name3").value;
         var RSGA = document.getElementById("name4").value;
         var GIT = document.getElementById("name5").value;
-        var SACELAB = document.getElementById("name6").value;
-        var SDDLAB = document.getElementById("name7").value;
-        var SS = document.getElementById("name8").value;
+        var SDDLAB = document.getElementById("name6").value;
+        var SACELAB = document.getElementById("name7").value;
+        var SFCLAB = document.getElementById("name8").value;
+        var SS = document.getElementById("name9").value;
 
         switch (TOS) {
           case 'A+':
@@ -212,7 +213,7 @@
 
         grade=0;
 
-        switch (SACELAB) {
+        switch (SDDLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -248,7 +249,7 @@
         sum+=grade*1.5;
 
         grade=0;
-        switch (SDDLAB) {
+        switch (SACELAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -282,6 +283,42 @@
              break;
         }
         sum+=grade*1.5;
+        grade=0;
+
+        switch (SFCLAB) {
+          case 'A+':
+          case 'a+':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            break;
+          default:
+             count++;
+             break;
+        }
+        sum+=grade*2;
 
 
         grade=0;
@@ -319,7 +356,7 @@
              break;
         }
         sum+=grade*2;
-        sum/=20;
+        sum/=22;
 
 
         const a = sum.toFixed(4);
@@ -332,7 +369,7 @@
     <h1>Nikhil Koushik</h1>
   </body>
   <h2>SITE 18M III-B.tech VI Sem (CE) SGPA Calculator</h2>
-  <pre><p style="font-size: 2rem; font-weight: bold;">  <spam class="ad">Note: </spam>Enter A+/A/B/C/D/E/F or a+/a/b/c/d/e/f</p></pre>
+  <pre><p style="font-size: 2rem; font-weight: bold; color: black;">  <spam class="ad">Note:</spam> Enter A+/A/B/C/D/E/F or a+/a/b/c/d/e/f</p></pre>
   <form action="" method="">
       </div>
     <table class="table  table-hover table-striped  table-light" style="margin-top: 22px; border-bottom: 0px;">
@@ -364,16 +401,20 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SA & CE LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SDD LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SDD LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SA & CE LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS & AB-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SFC LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS & AB-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name9"></td>
         </tr>
 
       </tbody>
