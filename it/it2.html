@@ -29,8 +29,8 @@
         var RP = document.getElementById("name4").value;
         var EEFM = document.getElementById("name5").value;
         var FMPMC = document.getElementById("name6").value;
-        var DBMSLAB = document.getElementById("name7").value;
-        var OSLAB = document.getElementById("name8").value;
+        var DWDMLAB = document.getElementById("name7").value;
+        var SELAB = document.getElementById("name8").value;
         var SS = document.getElementById("name9").value;
 
         switch (DWDM) {
@@ -248,7 +248,7 @@
         sum+=grade*3;
 
         grade=0;
-        switch (DBMSLAB) {
+        switch (DWDMLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -284,7 +284,7 @@
         sum+=grade*1.5;
 
         grade=0;
-        switch (OSLAB) {
+        switch (SELAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -354,7 +354,7 @@
              break;
         }
         sum+=grade*2;
-        sum/=20;
+        sum/=23;
 
 
         const a = sum.toFixed(4);
@@ -403,11 +403,11 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DBMS LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DW & DM LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">OS LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SE LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
         </tr>
         <tr>
