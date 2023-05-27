@@ -23,6 +23,7 @@
        sum=0;
        grade=0;
        count=0;
+       cred=0;
         var MS = document.getElementById("name1").value;
         var PGTD = document.getElementById("name2").value;
         var PE = document.getElementById("name3").value;
@@ -61,12 +62,14 @@
          case 'F':
          case 'f':
            grade = 0;
+           cred-=3;
            break;
          default:
             count++;
             break;
        }
        sum+=grade*3;
+       cred+=3;
        grade=0;
        switch (PGTD) {
          case 'A+':
@@ -96,13 +99,14 @@
         case 'F':
         case 'f':
           grade = 0;
+          cred-=3;
           break;
         default:
            count++;
            break;
       }
       sum+=grade*3;
-
+      cred+=3;
       grade=0;
         switch (PE) {
           case 'A+':
@@ -132,13 +136,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (EMI) {
           case 'A+':
@@ -168,13 +173,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (MPMC) {
           case 'A+':
@@ -204,13 +210,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (IR) {
           case 'A+':
@@ -240,13 +247,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (PSLAB) {
           case 'A+':
@@ -276,13 +284,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*1.5;
-
+        cred+=1.5;
         grade=0;
         switch (PELAB) {
           case 'A+':
@@ -312,14 +321,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*1.5;
-
-
+        cred+=1.5;
         grade=0;
         switch (SS) {
           case 'A+':
@@ -349,13 +358,15 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=2;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*2;
-        sum/=23;
+        cred+=2;
+        sum/=cred;
 
 
         const a = sum.toFixed(4);

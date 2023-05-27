@@ -23,6 +23,7 @@
        sum=0;
        grade=0;
        count=0;
+       cred=0;
         var DWDM = document.getElementById("name1").value;
         var CN = document.getElementById("name2").value;
         var SE = document.getElementById("name3").value;
@@ -61,12 +62,14 @@
          case 'F':
          case 'f':
            grade = 0;
+           cred-=3;
            break;
          default:
             count++;
             break;
         }
         sum+=grade*3;
+        cred+=3;
         grade=0;
 
         switch (CN) {
@@ -97,12 +100,14 @@
         case 'F':
         case 'f':
           grade = 0;
+          cred-=3;
           break;
         default:
            count++;
            break;
        }
         sum+=grade*3;
+        cred+=3;
         grade=0;
 
         switch (SE) {
@@ -133,13 +138,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (OR) {
           case 'A+':
@@ -169,13 +175,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (EEFM) {
           case 'A+':
@@ -205,13 +212,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (AI) {
           case 'A+':
@@ -241,13 +249,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (DWDMLAB) {
           case 'A+':
@@ -277,13 +286,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*1.5;
-
+        cred+=1.5;
         grade=0;
         switch (CNLAB) {
           case 'A+':
@@ -313,13 +323,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*1.5;
-
+        cred+=1.5;
         grade=0;
         switch (SS) {
           case 'A+':
@@ -349,13 +360,15 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=2;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*2;
-        sum/=20;
+        cred+=2;
+        sum/=cred;
 
 
         const a = sum.toFixed(4);

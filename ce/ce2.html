@@ -23,6 +23,7 @@
        sum=0;
        grade=0;
        count=0;
+       cred=0;
         var TOS = document.getElementById("name1").value;
         var DSS = document.getElementById("name2").value;
         var PPC = document.getElementById("name3").value;
@@ -61,12 +62,14 @@
          case 'F':
          case 'f':
            grade = 0;
+           cred-=3;
            break;
          default:
             count++;
             break;
           }
        sum+=grade*3;
+       cred+=3;
        grade=0;
        switch (DSS) {
          case 'A+':
@@ -96,13 +99,14 @@
         case 'F':
         case 'f':
           grade = 0;
+          cred-=3;
           break;
         default:
            count++;
            break;
        }
       sum+=grade*3;
-
+      cred+=3;
       grade=0;
         switch (PPC) {
           case 'A+':
@@ -132,13 +136,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (RSGA) {
           case 'A+':
@@ -168,13 +173,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
         switch (GIT) {
           case 'A+':
@@ -204,13 +210,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=3;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*3;
-
+        cred+=3;
         grade=0;
 
         switch (SDDLAB) {
@@ -241,13 +248,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*1.5;
-
+        cred+=1.5;
         grade=0;
         switch (SACELAB) {
           case 'A+':
@@ -277,6 +285,7 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=1.5;
             break;
           default:
              count++;
@@ -284,7 +293,7 @@
         }
         sum+=grade*1.5;
         grade=0;
-
+        cred+=1.5;
         switch (SFCLAB) {
           case 'A+':
           case 'a+':
@@ -313,14 +322,14 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=2;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*2;
-
-
+        cred+=2;
         grade=0;
         switch (SS) {
           case 'A+':
@@ -350,13 +359,15 @@
           case 'F':
           case 'f':
             grade = 0;
+            cred-=2;
             break;
           default:
              count++;
              break;
         }
         sum+=grade*2;
-        sum/=22;
+        cred+=2;
+        sum/=cred;
 
 
         const a = sum.toFixed(4);
