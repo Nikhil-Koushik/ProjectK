@@ -25,13 +25,13 @@
        count=0;
        cred=0;
         var VLSI = document.getElementById("name1").value;
-        var PSOC = document.getElementById("name2").value;
-        var HTS = document.getElementById("name3").value;
+        var HTS = document.getElementById("name2").value;
+        var PSOC = document.getElementById("name3").value;
         var DBMS = document.getElementById("name4").value;
         var EEFM = document.getElementById("name5").value;
         var BE = document.getElementById("name6").value;
-        var PSLAB = document.getElementById("name7").value;
-        var PELAB = document.getElementById("name8").value;
+        var MPMCLAB = document.getElementById("name7").value;
+        var MILAB = document.getElementById("name8").value;
         var SS = document.getElementById("name9").value;
 
         switch (VLSI) {
@@ -71,7 +71,7 @@
        sum+=grade*3;
        cred+=3;
        grade=0;
-       switch (PSOC) {
+       switch (HTS) {
          case 'A+':
          case 'a+':
           grade = 10;
@@ -108,7 +108,7 @@
       sum+=grade*3;
       cred+=3;
       grade=0;
-        switch (HTS) {
+        switch (PSOC) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -247,16 +247,16 @@
           case 'F':
           case 'f':
             grade = 0;
-            cred-=3;
+            cred-=0;
             break;
           default:
              count++;
              break;
         }
-        sum+=grade*3;
-        cred+=3;
+        sum+=grade*0;
+        cred+=0;
         grade=0;
-        switch (PSLAB) {
+        switch (MPMCLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -284,16 +284,16 @@
           case 'F':
           case 'f':
             grade = 0;
-            cred-=1.5;
+            cred-=1;
             break;
           default:
              count++;
              break;
         }
-        sum+=grade*1.5;
-        cred+=1.5;
+        sum+=grade*1;
+        cred+=1;
         grade=0;
-        switch (PELAB) {
+        switch (MILAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -395,11 +395,11 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name1"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PSO & C</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">HVDC TS</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name2"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">HVDC TS</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PSO & C</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name3"></td>
         </tr>
         <tr>
@@ -407,7 +407,7 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name4"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">EE&FM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">EE & FM</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
         </tr>
         <tr>
@@ -415,11 +415,11 @@
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PS LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">MPMC LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PE LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">M & I LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
         </tr>
         <tr>
@@ -434,11 +434,11 @@
   </form>
 <marquee behavior="scroll;" direction="left;" scrolldelay="1ms;" scrollamount="25;">Hello, This is the beta version of SGPA Calculator... CGPA Calculator is coming soon...</marquee>
 <div class="elle">
-  <a href="https://instagram.com/_nikhil.koushik_?igshid=YmMyMTA2M2Y="><img src="instagram.png" alt="" class="images"></a>
-  <a href="https://github.com/Nikhil-Koushik"><img src="github.png" alt="" class="images"></a>
-  <a href="https://www.linkedin.com/in/nikhil-koushik-974a20253/"><img src="linkedin.png" alt="" class="images"></a>
-  <a href="mailto:nikhil4b4@sasi.ac.in? subject="> <img src="gmail.png" alt="" class="images"></a>
-  <a href="tel:+918499973909"><img src="telephone.png" alt="" class="images"></a>
+  <a href="https://instagram.com/_nikhil.koushik_?igshid=YmMyMTA2M2Y="><img src="../instagram.png" alt="" class="images"></a>
+  <a href="https://github.com/Nikhil-Koushik"><img src="../github.png" alt="" class="images"></a>
+  <a href="https://www.linkedin.com/in/nikhil-koushik-974a20253/"><img src="../linkedin.png" alt="" class="images"></a>
+  <a href="mailto:nikhil4b4@sasi.ac.in? subject="> <img src="../gmail.png" alt="" class="images"></a>
+  <a href="tel:+918499973909"><img src="../telephone.png" alt="" class="images"></a>
 
 </div>
 
