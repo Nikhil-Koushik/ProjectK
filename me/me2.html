@@ -24,16 +24,17 @@
        grade=0;
        count=0;
        cred=0;
-        var TOM = document.getElementById("name1").value;
-        var DME = document.getElementById("name2").value;
+        var DME = document.getElementById("name1").value;
+        var TOM = document.getElementById("name2").value;
         var PMA = document.getElementById("name3").value;
-        var SM = document.getElementById("name4").value;
-        var EPC = document.getElementById("name5").value;
-        var XLAB = document.getElementById("name6").value;
-        var HTLAB = document.getElementById("name7").value;
-        var SS = document.getElementById("name8").value;
+        var EPC = document.getElementById("name4").value;
+        var SM = document.getElementById("name5").value;
+        var CLAB = document.getElementById("name6").value;
+        var TOMLAB = document.getElementById("name7").value;
+        var TELAB = document.getElementById("name8").value;
+        var SS = document.getElementById("name9").value;
 
-        switch (TOM) {
+        switch (DME) {
           case 'A+':
           case 'a+':
            grade = 10;
@@ -70,7 +71,7 @@
        sum+=grade*3;
        cred+=3;
        grade=0;
-       switch (DME) {
+       switch (TOM) {
          case 'A+':
          case 'a+':
           grade = 10;
@@ -144,43 +145,6 @@
         sum+=grade*3;
         cred+=3;
         grade=0;
-        switch (SM) {
-          case 'A+':
-          case 'a+':
-            grade = 10;
-            break;
-          case 'A':
-          case 'a':
-            grade = 9;
-            break;
-          case 'B':
-          case 'b':
-            grade = 8;
-            break;
-          case 'C':
-          case 'c':
-            grade = 7;
-            break;
-          case 'D':
-          case 'd':
-            grade = 6;
-            break;
-          case 'E':
-          case 'e':
-            grade = 5;
-            break;
-          case 'F':
-          case 'f':
-            grade = 0;
-            cred-=3;
-            break;
-          default:
-             count++;
-             break;
-        }
-        sum+=grade*3;
-        cred+=3;
-        grade=0;
         switch (EPC) {
           case 'A+':
           case 'a+':
@@ -218,7 +182,44 @@
         sum+=grade*3;
         cred+=3;
         grade=0;
-        switch (XLAB) {
+        switch (SM) {
+          case 'A+':
+          case 'a+':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            cred-=3;
+            break;
+          default:
+             count++;
+             break;
+        }
+        sum+=grade*3;
+        cred+=3;
+        grade=0;
+        switch (CLAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -255,7 +256,44 @@
         sum+=grade*1.5;
         cred+=1.5;
         grade=0;
-        switch (HTLAB) {
+        switch (TOMLAB) {
+          case 'A+':
+          case 'a+':
+            grade = 10;
+            break;
+          case 'A':
+          case 'a':
+            grade = 9;
+            break;
+          case 'B':
+          case 'b':
+            grade = 8;
+            break;
+          case 'C':
+          case 'c':
+            grade = 7;
+            break;
+          case 'D':
+          case 'd':
+            grade = 6;
+            break;
+          case 'E':
+          case 'e':
+            grade = 5;
+            break;
+          case 'F':
+          case 'f':
+            grade = 0;
+            cred-=1.5;
+            break;
+          default:
+             count++;
+             break;
+        }
+        sum+=grade*1.5;
+        cred+=1.5;
+        grade=0;
+        switch (TELAB) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -353,36 +391,40 @@
       </thead>
       <tbody  style="">
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">TOM-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DME-2</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name1"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">DME-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">TOM-2</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name2"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PMAM</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">PMA</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name3"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SM & IIOT</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">EP & C</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name4"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">EP & C</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SM & IIOT</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name5" ></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">XLAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">CAD/CAM LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name6"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">HT LAB</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">TOM LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name7"></td>
         </tr>
         <tr>
-          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS & AB-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">HT LAB</label></td>
           <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name8"></td>
+        </tr>
+        <tr>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px;"><label for="">SS & AB-2</label></td>
+          <td style="padding:3% 0; border-radius: 28px;border-bottom: 0px; padding-left:40px;"><input type="text" name="name" placeholder="  Enter Grade" id="name9"></td>
         </tr>
 
       </tbody>
