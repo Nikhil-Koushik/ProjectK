@@ -1,4 +1,9 @@
-
+.counter{
+  text-align: center;
+}
+.counterimg{
+  style=width:20%; 
+}
 table{
   visibility: visible;
 }
