@@ -24,17 +24,17 @@
        grade=0;
        count=0;
        cred=0;
-        var ML = document.getElementById("name1").value;
+        var EEFM = document.getElementById("name1").value;
         var CN = document.getElementById("name2").value;
         var SE = document.getElementById("name3").value;
-        var OR = document.getElementById("name4").value;
-        var EEFM = document.getElementById("name5").value;
+        var ML = document.getElementById("name4").value;
+        var OR = document.getElementById("name5").value;
         var ATCD = document.getElementById("name6").value;
         var CNLAB = document.getElementById("name7").value;
         var CDLAB = document.getElementById("name8").value;
         var SS = document.getElementById("name9").value;
 
-        switch (ML) {
+        switch (EEFM) {
          case 'A+':
          case 'a+':
            grade = 10;
@@ -145,7 +145,7 @@
         sum+=grade*3;
         cred+=3;
         grade=0;
-        switch (OR) {
+        switch (ML) {
           case 'A+':
           case 'a+':
             grade = 10;
@@ -182,7 +182,7 @@
         sum+=grade*3;
         cred+=3;
         grade=0;
-        switch (EEFM) {
+        switch (OR) {
           case 'A+':
           case 'a+':
             grade = 10;
